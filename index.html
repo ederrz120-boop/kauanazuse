@@ -1,272 +1,164 @@
-[11:34, 28/01/2026] Pai: <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-<meta charset="UTF-8">
-<title>Kauana Zuse · Designer Nails</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Kauana Zuse Designer Nails. Unhas como identidade.">
-
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
-
-<style>
-body {
-  margin: 0;
-  background: #0f0f0f;
-  color: #eaeaea;
-  font-family: 'Inter', sans-serif;
-  line-height: 1.8;
-}
-
-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 40px;
-}
-
-header h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 48px;
-  letter-spacing: 4px;
-  margin: 0;
-}
-
-header h1 span {
-  color: #c9a24d;
-}
-
-header h2 {
-  font-weight: 300;
-  letter-spacing: 3px;
-  margin: 12px 0 40px;
-  color: #b5b5b5;
-}
-
-header p {
-  max-width: 480px;
-  font-size: 17px;
-  color: #d0d0d0;
-}
-
-.btn {
-  margin-top: 40px;
-  padding: 14px 38px;
-  border: 1px solid #c9a24d;
-  text-decoration: none;
-  color: #c9a24d;
-  letter-spacing: 2px;
-  transition: 0.3s;
-}
-
-.btn:hover {
-  background: #c9a24d;
-  color: #0f0f0f;
-}
-
-section {
-  max-width: 1100px;
-  margin: auto;
-  padding: 120px 40px;
-}
-
-section h3 {
-  font-family: 'Playfair Display', serif;
-  font-size: 34px;
-  margin-bottom: 40px;
-}
-
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 30px;
-}
-
-.gallery img {
-  width: 100%;
-  border-radius: 14px;
-  opacity: 0.9;
-}
-
-.signature {
-  border-left: 3px solid #c9a24d;
-  padding: 40px;
-  font-style: italic;
-  color: #cfcfcf;
-}
-
-.process p {
-  margin-bottom: 16px;
-  color: #cccccc;
-}
-
-footer {
-  text-align: center;
-  padding: 80px 20px;
-  font-size: 13px;
-  color: #777;
-}
-</style>
-</head>
-
-<body>
-
-<header>
-  <h1><span>KAUANA ZUSE</span></h1>
-  <h2>DESIGNER NAILS</h2>
-
-  <p>
-    Unhas não são detalhe.<br>
-    São identidade, intenção e presença.
-  </p>
-
-  <a class="btn" href="https://wa.me/55SEUNUMERO">Agendar experiência</a>
-</header>
-
-<section>
-  <h3>Trabalhos selecionados</h3>
-  <div class="gallery">
-    <img src="imagens/nails1.jpg">
-    <img src="imagens/nails2.jpg">
-    <img src="imagens/nails3.jpg">
-    <img src="imagens/nails4.jpg">
-  </div>
-</section>
-
-<section>
-  <h3>A assinatura</h3>
-  <div class="signature">
-    Cada criação nasce de uma leitura silenciosa.
-    Estilo, rotina, personalidade.
-    A unha não compete.
-    Ela acompanha.
-  </div>
-</section>
-
-<section class="process">
-  <h3>O processo</h3>
-  <p>1 — Leitura do estilo</p>
-  <p>2 — Criação autoral</p>
-  <p>3 — Finalização com intenção</p>
-</section>
-
-<footer>
-  © Kauana Zuse · Designer Nails
-</footer>
-
-</body>
-</html>
-[12:19, 28/01/2026] Pai: <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
 <title>Kauana Zuse · Designer Nails</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
-body {
-  margin: 0;
-  background: #0c0c0c;
-  color: #e6e6e6;
-  font-family: 'Inter', sans-serif;
+* {
+  box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  background: #0a0a0a;
+  color: #e9e6e2;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---------- HEADER ---------- */
+
 header {
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 40px;
+  padding: 50px 30px;
 }
 
-header img {
-  width: 140px;
+.profile {
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
+  overflow: hidden;
   margin-bottom: 30px;
-  opacity: 0.95;
+}
+
+.profile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 46px;
-  letter-spacing: 4px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 48px;
+  letter-spacing: 6px;
   margin: 0;
 }
 
 h1 span {
-  color: #c9a24d;
+  color: #c8a24a;
 }
 
 h2 {
-  font-weight: 300;
-  letter-spacing: 3px;
-  color: #b5b5b5;
-  margin: 10px 0 30px;
+  font-size: 12px;
+  letter-spacing: 4px;
+  font-weight: 400;
+  color: #b9b3aa;
+  margin: 10px 0 28px;
 }
 
-p {
+header p {
   max-width: 480px;
-  color: #cccccc;
-  line-height: 1.8;
+  font-size: 14px;
+  line-height: 2;
+  color: #d4d0ca;
+  margin: 0;
 }
 
 .buttons {
-  margin-top: 40px;
   display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
+  gap: 16px;
+  margin-top: 36px;
 }
 
 .btn {
-  padding: 14px 34px;
-  border: 1px solid #c9a24d;
-  color: #c9a24d;
+  padding: 12px 32px;
+  border: 1px solid #c8a24a;
+  color: #c8a24a;
   text-decoration: none;
-  letter-spacing: 2px;
-  transition: 0.3s;
+  font-size: 11px;
+  letter-spacing: 3px;
+  transition: 0.25s;
 }
 
 .btn:hover {
-  background: #c9a24d;
-  color: #0c0c0c;
+  background: #c8a24a;
+  color: #0a0a0a;
 }
+
+/* ---------- SECTIONS ---------- */
 
 section {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: auto;
-  padding: 120px 40px;
+  padding: 90px 40px;
 }
 
-h3 {
-  font-family: 'Playfair Display', serif;
-  font-size: 32px;
+section h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 36px;
   margin-bottom: 40px;
+  text-align: center;
 }
+
+/* ---------- GALLERY (IMAGENS IGUAIS) ---------- */
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
 }
 
 .gallery img {
   width: 100%;
-  border-radius: 14px;
-  opacity: 0.9;
+  height: 360px;          /* 🔒 todas iguais */
+  object-fit: cover;     /* 🔒 sem distorção */
+  border-radius: 16px;
+  filter: brightness(0.95);
 }
+
+/* ---------- SIGNATURE ---------- */
+
+.signature {
+  max-width: 620px;
+  margin: auto;
+  text-align: center;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px;
+  line-height: 1.7;
+  color: #d7d3cd;
+}
+
+/* ---------- FOOTER ---------- */
 
 footer {
   text-align: center;
-  padding: 80px 20px;
-  font-size: 13px;
+  padding: 60px 20px;
+  font-size: 11px;
+  letter-spacing: 2px;
   color: #777;
+}
+
+/* ---------- RESPONSIVO ---------- */
+
+@media (max-width: 1000px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
 }
 </style>
 </head>
@@ -274,25 +166,26 @@ footer {
 <body>
 
 <header>
-  <img src="imagens/kauana.jpg.jpeg">
+  <div class="profile">
+    <img src="imagens/kauana.jpg.jpeg">
+  </div>
 
   <h1><span>KAUANA ZUSE</span></h1>
   <h2>DESIGNER NAILS</h2>
 
   <p>
-    Unhas são linguagem silenciosa.<br>
-    Estilo não se copia. Se constrói.
+    Serviço privado para mulheres que valorizam<br>
+    estética, discrição e excelência.
   </p>
 
   <div class="buttons">
     <a class="btn" href="https://wa.me/55SEUNUMERO">AGENDAR</a>
-    <a class="btn" href="https://www.instagram.com/kaaudesigner/" target="_blank">INSTAGRAM</a>
-    <a class="btn" href="curso.html">CURSO</a>
+    <a class="btn" href="https://instagram.com/SEUINSTAGRAM" target="_blank">INSTAGRAM</a>
   </div>
 </header>
 
 <section>
-  <h3>Trabalhos autorais</h3>
+  <h3>Trabalhos selecionados</h3>
   <div class="gallery">
     <img src="imagens/nails1.jpg.jpeg">
     <img src="imagens/nails2.jpg.jpeg">
@@ -301,8 +194,16 @@ footer {
   </div>
 </section>
 
+<section>
+  <div class="signature">
+    Luxo verdadeiro não chama atenção.<br>
+    Ele se impõe em silêncio.
+  </div>
+</section>
+
 <footer>
-  © Kauana Zuse · Designer Nails
+  © Kauana Zuse · Private Nail Design
 </footer>
 
-</b
+</body>
+</html>
